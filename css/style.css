@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+:root{
+    --main-color:#3468C0;
+    --orange:#FF9843;
+    --hover:#FFDD95;
+    --bg-color:#86A7FC;
+    --text-color:#FFFFFF;
+    --font:'Poppins", sans-serif';
+}
+
+
+body {
+    font-family: var(--font);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    
+}
+.social a{
+    color:#FF9843;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#content-about{
+width: 620px;
+margin-top: 3rem;
+font-size: 20px;
+background-color: var(--main-color);
+padding:3rem ;
+border-radius: 20px;
+border: 6px dashed var(--orange);
+box-shadow: 6px 2px 5px 0px rgba(138,134,138,1);
+color: white;
+}
+#content-about p{
+    text-align: center;
+}
+#content-about span{
+    color:var(--orange);
+    font-weight: bolder;    
+}
+.barra-vertical{
+    width: 5px;
+    height: 250px;
+    background-color:var(--orange);
+    text-align: center;
+    box-shadow: 3px 6px 5px 0px rgba(161,161,161,1);
+}
+.barra-horizontal{
+    width: 500px;
+    height: 5px;
+    background-color: var(--orange);
+    text-align: center;
+    box-shadow: 3px 6px 5px 0px rgba(161,161,161,1);
+}
+.container-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.motivos{
+    width: 500px;
+    height:300px ;
+    background-color: var(--main-color);
+    border-radius: 20px 0 20px 20px;
+    border: 6px dashed var(--orange);
+    box-shadow: 6px 2px 5px 0px rgba(138,134,138,1);
+    padding: 3rem;
+    font-size: 20px;
+    text-align: center;
+}
+.motivos p{
+    margin-top: 6rem;
+}
+.curiosidade{
+    width: 500px;
+    height:300px ;
+    background-color: var(--main-color);
+    border-radius: 0px 20px 20px 20px;
+    border: 6px dashed var(--orange);
+    box-shadow: 6px 2px 5px 0px rgba(138,134,138,1);
+    padding: 3rem;
+    font-size: 20px;
+    text-align: center;
+}
+.curiosidade p{
+    margin-top: 6rem;
+}

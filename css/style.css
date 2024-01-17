@@ -204,6 +204,7 @@ border-bottom: 20px double var(--text-color);
 border-left: 20px double var(--text-color);
 outline: 5px double var(--text-color);
 outline-offset: 5px;
+background-color: #B0A695;
 }
 
 #content-about p{
@@ -255,6 +256,7 @@ outline-offset: 5px;
     font-size: 20px;
     text-align: center;
     margin-right: 3rem;
+    background-color: #B0A695;
 }
 
 .motivos p{
@@ -278,7 +280,7 @@ outline-offset: 5px;
     outline: 5px double var(--text-color);
     outline-offset: 5px;
     margin-left: 3rem;
-}
+    background-color:#B0A695;}
 
 .curiosidade p{
     margin-top: 1rem;

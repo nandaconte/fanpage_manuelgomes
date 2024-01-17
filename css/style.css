@@ -234,7 +234,7 @@ background-color: #B0A695;
     box-shadow: 3px 6px 5px 0px rgba(161,161,161,1);
 }
 
-.container-principal{
+.subject{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -284,4 +284,76 @@ background-color: #B0A695;
 
 .curiosidade p{
     margin-top: 1rem;
+}
+ 
+.animation {
+    view-timeline: --subjectReveal block;
+    animation-timeline: --subjectReveal;  
+    animation-name: appear;
+    animation-range: entry 10% contain 25%;
+}
+
+@keyframes appear{
+    from{
+      opacity: 0;
+      transform: scaleX(0);
+    }  
+    to {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+}
+
+
+@media(max-width: 768px) {
+    #content-about{
+        margin: 3rem;
+    }
+    .subject{
+        flex-direction: column;
+        margin: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .barra-vertical{
+        height: 100px;        
+    }    
+    .barra-horizontal{
+        width: 5px;
+        height: 100px;
+        margin: 3rem 0;;
+    }
+    .motivos,
+    .curiosidade{
+        margin: 0;
+    }
+}
+   
+@media(max-width: 390px) {
+    .logo{
+        height: 8rem;
+    }
+    header{
+        flex-direction: column;
+    }
+    .social{
+        flex-direction: row;
+    }
+    .curiosidade,
+    .motivos{
+        margin: 0;
+        align-items: center;
+        padding: 1rem;
+    }
+    .motivos{
+        height: 10rem;
+    }
+    .curiosidade{
+        height: 14rem;
+
+    }
+    p{
+        font-size: 1rem;
+    }
+    
 }
